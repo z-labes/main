@@ -1,0 +1,22 @@
+{
+  "name": "mickspicks",
+  "version": "1.0.0",
+  "description": "Mick's Picks: weekly NFL pick'em for family and friends",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z-labes/main.git"
+  },
+  "bugs": {
+    "url": "https://github.com/z-labes/main/issues"
+  },
+  "homepage": "https://github.com/z-labes/main#readme",
+  "devDependencies": {
+    "wrangler": "^4.149.0"
+  },
+  "private": true,
+  "type": "module"
+}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mick's Picks</title>
+  <meta name="description" content="Pick the winner of every NFL game each week and see how you stack up against the family.">
+  <meta name="theme-color" content="#15171b">
+  <link rel="icon" href="/img/icon.png">
+  <link rel="apple-touch-icon" href="/img/icon.png">
+  <meta property="og:title" content="Mick's Picks">
+  <meta property="og:description" content="Weekly NFL pick'em for the family. Presented by Avari.">
+  <meta property="og:image" content="/img/micks-picks-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Graduate&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#/" class="brand" aria-label="Mick's Picks home">
+        <img src="/img/micks-picks-logo.webp" width="600" height="684" alt="Mick's Picks logo" class="brand-logo">
+      </a>
+      <div class="header-text">
+        <p class="eyebrow" id="season-label">NFL Pick'em</p>
+        <h1 class="week-title" id="week-title">Mick's Picks</h1>
+        <p class="sponsor">Presented by <img src="/img/avari-logo-white.png" alt="Avari" class="sponsor-logo"></p>
+      </div>
+    </div>
+    <nav class="tabs" aria-label="Main">
+      <a href="#/" data-route="picks">Make Picks</a>
+      <a href="#/leaderboard" data-route="leaderboard">Leaderboard</a>
+      <a href="#/history" data-route="history">History</a>
+    </nav>
+  </header>
+
+  <main id="app" class="container" aria-live="polite">
+    <p class="loading">Loading this week's games…</p>
+  </main>
+
+  <footer class="site-footer">
+    <img src="/img/avari-logo.png" alt="Avari" class="footer-logo">
+    <p>Mick's Picks is proudly presented by Avari.</p>
+    <p class="small">Schedules, records and scores from ESPN. <a href="#/admin">Mick's admin</a></p>
+  </footer>
+
+  <div id="toast" class="toast" role="status" hidden></div>
+  <script src="/app.js" type="module"></script>
+</body>
+</html>
